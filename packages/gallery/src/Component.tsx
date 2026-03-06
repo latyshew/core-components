@@ -57,6 +57,11 @@ export type GalleryProps = {
      * Дополнительный класс для попапа
      */
     popupClassName?: string;
+
+    /**
+     * Обработчик при достижении конца элементов галереии
+     */
+    handleChangeImages: (slideDirection: 'next' | 'prev') => void;
 };
 
 const DEFAULT_FULL_SCREEN = false;
@@ -75,6 +80,7 @@ export const Gallery: FC<GalleryProps> = ({
     onClose,
     onSlideIndexChange,
     popupClassName,
+    handleChangeImages,
 }) => {
     const currentSlideIndexState = useState(initialSlide);
     const uncontrolled = slideIndex === undefined;
@@ -115,11 +121,17 @@ export const Gallery: FC<GalleryProps> = ({
         let nextIndex = currentSlideIndex + 1;
 
         if (nextIndex >= images.length) {
+            if (handleChangeImages) {
+                handleChangeImages('next');
+
+                return;
+            }
+
             nextIndex = loop ? 0 : lastIndex;
         }
 
         slideTo(nextIndex);
-    }, [images.length, loop, currentSlideIndex, slideTo]);
+    }, [images.length, currentSlideIndex, slideTo, handleChangeImages, loop]);
 
     const slidePrev = useCallback(() => {
         const lastIndex = images.length - 1;
@@ -127,11 +139,17 @@ export const Gallery: FC<GalleryProps> = ({
         let nextIndex = currentSlideIndex - 1;
 
         if (nextIndex < 0) {
+            if (handleChangeImages) {
+                handleChangeImages('prev');
+
+                return;
+            }
+
             nextIndex = loop ? lastIndex : 0;
         }
 
         slideTo(nextIndex);
-    }, [images.length, loop, currentSlideIndex, slideTo]);
+    }, [images.length, currentSlideIndex, slideTo, handleChangeImages, loop]);
 
     const setImageMeta = useCallback(
         (meta: ImageMeta, index: number) => {
