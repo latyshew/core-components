@@ -1,5 +1,7 @@
 ---
-'@alfalab/core-components-gallery': minor
+'@alfalab/core-components-gallery': patch
 ---
 
-добавлен обработчик достижения края галереи
+##### Gallery
+
+- добавлен обработчик достижения края галереи
