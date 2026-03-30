@@ -1,6 +1,6 @@
 {
     "name": "@alfalab/core-components",
-    "version": "50.8.0",
+    "version": "50.8.1",
     "homepage": "https://github.com/core-ds/core-components#readme",
     "bugs": {
         "url": "https://github.com/core-ds/core-components/issues"
@@ -113,7 +113,7 @@
         "@alfalab/core-components-steps": "^3.0.3",
         "@alfalab/core-components-switch": "^6.0.3",
         "@alfalab/core-components-system-message": "^4.0.3",
-        "@alfalab/core-components-tab-bar": "^4.0.3",
+        "@alfalab/core-components-tab-bar": "^4.0.4",
         "@alfalab/core-components-table": "^4.0.9",
         "@alfalab/core-components-tabs": "^10.0.9",
         "@alfalab/core-components-tag": "^10.0.3",

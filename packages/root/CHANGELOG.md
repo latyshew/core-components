@@ -1,5 +1,21 @@
 # @alfalab/core-components
 
+## 50.8.1
+
+### Patch Changes
+
+<sup><time>30.03.2026</time></sup>
+
+#### [#2151](https://github.com/core-ds/core-components/pull/2151)
+
+##### TabBar
+
+- Изменена высота компонента
+- Верхний и нижний отступы изменены в соответствии с дизайном
+
+- Обновлены зависимости
+    - @alfalab/core-components-tab-bar@4.0.4
+
 ## 50.8.0
 
 ### Minor Changes

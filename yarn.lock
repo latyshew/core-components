@@ -1887,7 +1887,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@alfalab/core-components-tab-bar@npm:^4.0.3, @alfalab/core-components-tab-bar@workspace:packages/tab-bar":
+"@alfalab/core-components-tab-bar@npm:^4.0.4, @alfalab/core-components-tab-bar@workspace:packages/tab-bar":
   version: 0.0.0-use.local
   resolution: "@alfalab/core-components-tab-bar@workspace:packages/tab-bar"
   dependencies:
@@ -2283,7 +2283,7 @@ __metadata:
     "@alfalab/core-components-steps": "npm:^3.0.3"
     "@alfalab/core-components-switch": "npm:^6.0.3"
     "@alfalab/core-components-system-message": "npm:^4.0.3"
-    "@alfalab/core-components-tab-bar": "npm:^4.0.3"
+    "@alfalab/core-components-tab-bar": "npm:^4.0.4"
     "@alfalab/core-components-table": "npm:^4.0.9"
     "@alfalab/core-components-tabs": "npm:^10.0.9"
     "@alfalab/core-components-tag": "npm:^10.0.3"
